@@ -5,18 +5,24 @@ public:
 
         vector<bool> prime (n, true);
         prime[0] = prime[1] = false;
-
         int ans = 0;
 
-        for(int i = 2; i < n; i++) {
+        for(int i = 2; i * i < n; i++) {
             if(prime[i]) {
-                ans++;
+                int j = i * i;
 
-                int j = i * 2;
                 while(j < n) {
                     prime[j] = false;
                     j += i;
                 }
+            }
+        }
+
+        int primeSize = prime.size();
+
+        for(int i = 0; i < primeSize; i++) {
+            if(prime[i] == true) {
+                ans++;
             }
         }
 
