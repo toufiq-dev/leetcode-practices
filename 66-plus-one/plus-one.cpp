@@ -15,7 +15,6 @@ public:
            }
 
            if(digitsSize == 0 && sum > 9) {
-               carry = 0;
                ans.push_back(1);
                ans.push_back(0);
            } else {
