@@ -1,6 +1,6 @@
 class Solution {
 public:
-    // TC: O(N)
+    // TC: O(N ^ 2)
     // SC: O(N)
     vector<vector<int>> threeSum(vector<int>& nums) {
         // step1: sort(nums)
@@ -28,7 +28,7 @@ public:
                 else {
                     while(L + 1 < R && nums[L + 1] == b) 
                         L++;
-                    while(R - 1 > L  && nums[R - 1] == c)
+                    while(L < R - 1 && nums[R - 1] == c)
                         R--;
 
                     triplets.push_back({a, b, c});
