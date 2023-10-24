@@ -1,25 +1,18 @@
-const int DUMMY_VAL = 0;
-
 class MyLinkedList {
 public:
     class ListNode {
     public:
         int val;
         ListNode* next;
+        static const int DUMMY_VAL = 0;
 
-        ListNode(int _val = DUMMY_VAL, ListNode* _next = nullptr){
-            val = _val;
-            next = _next;
-        }
+        ListNode(int _val = DUMMY_VAL, ListNode* _next = nullptr) : val(_val), next(_next) {}
     };
 
     int len;
     ListNode* dHead;
 
-    MyLinkedList() {
-        len = 0;
-        dHead = new ListNode(DUMMY_VAL);    
-    }
+    MyLinkedList() : len(0), dHead(new ListNode(ListNode::DUMMY_VAL)) {}
     
     int get(int index) {
         if(index < 0 || index >= len) return -1;
