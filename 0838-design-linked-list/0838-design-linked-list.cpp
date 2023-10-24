@@ -6,17 +6,8 @@ public:
     public:
         int val;
         ListNode* next;
-        
-        ListNode() {
-            next = nullptr;
-        }
 
-        ListNode(int _val = DUMMY_VAL) {
-            val = _val;
-            next = nullptr;
-        }
-
-        ListNode(int _val, ListNode* _next) {
+        ListNode(int _val = DUMMY_VAL, ListNode* _next = nullptr){
             val = _val;
             next = _next;
         }
