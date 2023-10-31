@@ -1,15 +1,22 @@
 class Solution {
 public:
-    string longestCommonPrefix(vector<string>& strs) {
-        string &base = strs[0];
-        int lcp_len = 0;
-        bool status = true;
-        for (; lcp_len < base.size(); lcp_len++){
-            for (auto &str : strs) {
-                status = status & (str[lcp_len] == base[lcp_len]);
-            }
-            if (status == false) break;
+  string longestCommonPrefix(vector<string>& strs) {
+    string prefix = strs[0];
+
+    for (auto &str : strs) {
+      string new_prefix = "";
+
+      for (int i = 0; i < min(prefix.size(), str.size()); i++) {
+        if (prefix[i] == str[i]) {
+          new_prefix += prefix[i];
+        } else {
+          break;
         }
-        return base.substr(0, lcp_len);
+      }
+      
+      prefix = new_prefix;
     }
+
+    return prefix;
+  }
 };
