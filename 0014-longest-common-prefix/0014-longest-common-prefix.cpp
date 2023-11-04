@@ -1,7 +1,9 @@
 class Solution {
 public:
+  // TC: O(m * n) where m = |strs|, n = |prefix| / |str|
+  // SC: O(n) where n = longest commong prefix
   string longestCommonPrefix(vector<string>& strs) {
-    string prefix = strs[0];
+    auto prefix = strs[0];
 
     for (auto &str : strs) {
       string new_prefix = "";
