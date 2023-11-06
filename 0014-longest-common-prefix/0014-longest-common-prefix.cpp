@@ -1,24 +1,19 @@
 class Solution {
 public:
-  // TC: O(m * n) where m = |strs|, n = |prefix| / |str|
-  // SC: O(n) where n = longest commong prefix
-  string longestCommonPrefix(vector<string>& strs) {
-    auto prefix = strs[0];
-
-    for (auto &str : strs) {
-      string new_prefix = "";
-
-      for (int i = 0; i < min(prefix.size(), str.size()); i++) {
-        if (prefix[i] == str[i]) {
-          new_prefix += prefix[i];
-        } else {
-          break;
+    string longestCommonPrefix(vector<string>& strs) {
+        auto prefix = strs[0];
+        
+        for (auto &str : strs) {
+            int i = 0;
+            while (i < prefix.size() && i < str.size() && prefix[i] == str[i]) {
+                i++;
+            }
+            prefix = prefix.substr(0, i); // Extract the common prefix.
+            if (prefix.empty()) {
+                break; // No common prefix, no need to check further.
+            }
         }
-      }
-      
-      prefix = new_prefix;
+        
+        return prefix;
     }
-
-    return prefix;
-  }
 };
