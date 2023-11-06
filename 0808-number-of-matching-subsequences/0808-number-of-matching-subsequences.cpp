@@ -1,4 +1,6 @@
 class Solution {
+    // TC: O(|s| + |word| * logs)
+    // SC: O(1)
 private:
     vector<int> index_of[26];
     bool isSubSeq(string &s, string &ref) {
