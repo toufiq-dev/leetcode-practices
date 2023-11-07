@@ -3,7 +3,7 @@ class Solution {
     // SC: O(1)
 private:
     vector<int> index_of[26];
-    bool isSubSeq(string &s, string &ref) {
+    bool isSubSeq(string &ref) {
         int last = -1;
         for(int i = 0; i < ref.size(); i++) {
             int ord = ref[i] - 'a';
@@ -21,7 +21,7 @@ public:
 
         int count = 0;
         for(auto &word : words) {
-            count += isSubSeq(s, word);
+            count += isSubSeq(word);
         }
 
         return count;
