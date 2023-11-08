@@ -1,19 +1,21 @@
 class Solution {
 public:
+    // TC: O(N) where N is total number of characters in all the strings
+    // SC: O(1)
     string longestCommonPrefix(vector<string>& strs) {
         auto prefix = strs[0];
-        
-        for (int i = 1; i < strs.size(); i++) {
-            int j = 0;
-            while (j < prefix.size() && j < strs[i].size() && prefix[j] == strs[i][j]) {
-                j++;
+
+        for (auto &str : strs) {
+            int i = 0;
+            while (i < prefix.size() && i < str.size() && prefix[i] == str[i]) {
+                i++;
             }
-            prefix = prefix.substr(0, j); // Extract the common prefix.
+            prefix = prefix.substr(0, i); 
             if (prefix.empty()) {
-                break; // No common prefix, no need to check further.
+                break; 
             }
         }
-        
+
         return prefix;
     }
 };
