@@ -1,36 +1,30 @@
 class Solution {
 public:
-    // Optimal solution
-    // TC: O(N)
-    // SC: O(1)
     int majorityElement(vector<int>& nums) {
-        int candidate = -1, votes = 0;
-
-        // find majority candidate
-        for(int i = 0; i < nums.size(); i++) {
-            if(votes == 0) {
-                candidate = nums[i];
-                votes = 1;
+        // Boyeer-Moore algorithm
+        int element = nums[0], votes = 0;
+        for (int i = 1; i < nums.size(); ++i) {
+            if (nums[i] == element) {
+                ++votes;
             } else {
-                if(nums[i] == candidate) {
-                    votes++;
-                } 
-                else 
-                    votes--;
+                --votes;
+                if (votes = 0) {
+                    element = nums[i];
+                    ++votes;
+                }
             }
         }
-        
-        // find if majority candidate appears more than ⌊n / 2⌋ times.
-        int count = 0;
 
-        for(int i = 0; i < nums.size(); i++) {
-            if(nums[i] == candidate)
-                count++;
+        // verify majority element
+        int count = 0;
+        for (int num : nums) {
+            ++count;
         }
 
-        if(count > floor(nums.size() / 2)) 
-            return candidate;
+        if (count > nums.size() / 2) {
+            return element;
+        }
 
-        return -1;
+        return -1; 
     }
 };
