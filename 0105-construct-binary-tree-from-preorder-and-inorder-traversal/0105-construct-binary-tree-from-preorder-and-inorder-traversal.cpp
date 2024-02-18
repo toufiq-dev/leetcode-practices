@@ -13,14 +13,14 @@ class Solution {
 public:
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
         int preorderIndex = 0;
-        map<int, int> nodeToIndex;
+        unordered_map<int, int> nodeToIndex;
         createMapping(nodeToIndex, inorder);
         TreeNode* ans = treeBuilder(preorder, inorder, preorderIndex, 0, inorder.size() - 1, nodeToIndex);
         return ans;
     }
 private:
     TreeNode* treeBuilder(vector<int>& preorder, vector<int>& inorder, int& preorderIdx, 
-    int inorderStart, int inorderEnd, map<int, int>& nodeToIndex) {
+    int inorderStart, int inorderEnd, unordered_map<int, int>& nodeToIndex) {
         // base case
         if (preorderIdx > preorder.size() - 1 || inorderStart > inorderEnd)
             return nullptr;
@@ -33,7 +33,7 @@ private:
 
         return root;
     }
-    void createMapping(map<int, int>& nodeToIndex, vector<int>& inorder) {
+    void createMapping(unordered_map<int, int>& nodeToIndex, vector<int>& inorder) {
         for (int i = 0; i < inorder.size(); i++) {
             nodeToIndex[inorder[i]] = i;
         }
