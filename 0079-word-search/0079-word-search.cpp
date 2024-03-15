@@ -17,7 +17,7 @@ private:
     bool visited[6][6];
 
     bool searchIn(vector<vector<char>>& board, string& word, int x, int y, int idx) {
-        if (idx >= word.size()) 
+        if (idx == word.size()) 
             return true;
         
         if (x < 0 || y < 0 || x >= board.size() || y >= board[x].size() || visited[x][y] == 1) 
