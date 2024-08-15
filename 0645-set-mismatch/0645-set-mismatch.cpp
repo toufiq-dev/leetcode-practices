@@ -1,20 +1,28 @@
 class Solution {
 public:
     vector<int> findErrorNums(vector<int>& nums) {
-        int dup = -1, missing = -1;
-        for (int i = 1; i <= nums.size(); ++i) {
-            int count = 0;
-            for (int j = 0; j < nums.size(); ++j) {
-                if (nums[j] == i)
-                    ++count;
-            }
-            if (count == 2)
-                dup = i;
-            else if (count == 0)
-                missing = i;
-            if (dup > 0 && missing > 0)
-                break;
+        unordered_map<int, int> seen;
+        int duplicate = -1;
+        
+        for (int i = 0; i < nums.size(); i++) {
+            if (seen.count(nums[i]))
+                duplicate = nums[i];
+            
+            seen[nums[i]] = i;
         }
-        return {dup, missing};
+
+        int missing = -1;
+        unordered_map<int, int> nTable;
+        for (int i = 1; i <= nums.size(); i++) {
+            nTable[i]++;
+        }
+
+        for (auto x : nTable) {
+            if (!seen.count(x.first))
+                missing = x.first;
+        }
+        
+
+        return {duplicate, missing};
     }
 };
