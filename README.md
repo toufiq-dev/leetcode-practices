@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0414-third-maximum-number](https://github.com/toufiq-dev/leetcode-practices/tree/master/0414-third-maximum-number) |
 | [0645-set-mismatch](https://github.com/toufiq-dev/leetcode-practices/tree/master/0645-set-mismatch) |
 ## Bit Manipulation
 |  |
@@ -34,5 +35,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0414-third-maximum-number](https://github.com/toufiq-dev/leetcode-practices/tree/master/0414-third-maximum-number) |
 | [0645-set-mismatch](https://github.com/toufiq-dev/leetcode-practices/tree/master/0645-set-mismatch) |
 <!---LeetCode Topics End-->
