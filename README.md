@@ -28,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0414-third-maximum-number](https://github.com/toufiq-dev/leetcode-practices/tree/master/0414-third-maximum-number) |
 | [0645-set-mismatch](https://github.com/toufiq-dev/leetcode-practices/tree/master/0645-set-mismatch) |
+| [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/toufiq-dev/leetcode-practices/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
 | [2058-concatenation-of-array](https://github.com/toufiq-dev/leetcode-practices/tree/master/2058-concatenation-of-array) |
 ## Bit Manipulation
 |  |
