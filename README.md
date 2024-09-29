@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0125-valid-palindrome](https://github.com/toufiq-dev/leetcode-practices/tree/master/0125-valid-palindrome) |
 | [0387-first-unique-character-in-a-string](https://github.com/toufiq-dev/leetcode-practices/tree/master/0387-first-unique-character-in-a-string) |
+| [0392-is-subsequence](https://github.com/toufiq-dev/leetcode-practices/tree/master/0392-is-subsequence) |
 ## Queue
 |  |
 | ------- |
@@ -23,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0125-valid-palindrome](https://github.com/toufiq-dev/leetcode-practices/tree/master/0125-valid-palindrome) |
+| [0392-is-subsequence](https://github.com/toufiq-dev/leetcode-practices/tree/master/0392-is-subsequence) |
 ## Array
 |  |
 | ------- |
@@ -43,4 +45,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2058-concatenation-of-array](https://github.com/toufiq-dev/leetcode-practices/tree/master/2058-concatenation-of-array) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0392-is-subsequence](https://github.com/toufiq-dev/leetcode-practices/tree/master/0392-is-subsequence) |
 <!---LeetCode Topics End-->
