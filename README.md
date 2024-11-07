@@ -25,11 +25,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0018-4sum](https://github.com/toufiq-dev/leetcode-practices/tree/master/0018-4sum) |
 | [0125-valid-palindrome](https://github.com/toufiq-dev/leetcode-practices/tree/master/0125-valid-palindrome) |
 | [0392-is-subsequence](https://github.com/toufiq-dev/leetcode-practices/tree/master/0392-is-subsequence) |
 ## Array
 |  |
 | ------- |
+| [0018-4sum](https://github.com/toufiq-dev/leetcode-practices/tree/master/0018-4sum) |
 | [0414-third-maximum-number](https://github.com/toufiq-dev/leetcode-practices/tree/master/0414-third-maximum-number) |
 | [0645-set-mismatch](https://github.com/toufiq-dev/leetcode-practices/tree/master/0645-set-mismatch) |
 | [0978-valid-mountain-array](https://github.com/toufiq-dev/leetcode-practices/tree/master/0978-valid-mountain-array) |
@@ -42,6 +44,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0018-4sum](https://github.com/toufiq-dev/leetcode-practices/tree/master/0018-4sum) |
 | [0414-third-maximum-number](https://github.com/toufiq-dev/leetcode-practices/tree/master/0414-third-maximum-number) |
 | [0645-set-mismatch](https://github.com/toufiq-dev/leetcode-practices/tree/master/0645-set-mismatch) |
 ## Simulation
