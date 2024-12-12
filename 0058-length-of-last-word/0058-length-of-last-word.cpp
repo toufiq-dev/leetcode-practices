@@ -1,20 +1,21 @@
 class Solution {
 public:
     int lengthOfLastWord(string s) {
-        int length = 0;
+        int count = 0;
+        bool mark = false;
 
         for (int i = s.size() - 1; i >= 0; i--) {
-            int x = (int)s[i];
-
-            if (x != 32) {
-                length++;
-            } else if (x == 32 and length == 0) {
-                continue;
-            } else if (x == 32 and length != 0) {
-                break;
+            int encode = int(s[i]);
+            if (encode != 32) {
+                mark = true;
             }
+            if (mark && encode != 32)
+                count++;
+            if (mark && encode == 32)
+                break;
+            
         }
 
-        return length;
+        return count;
     }
 };
