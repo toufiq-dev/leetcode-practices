@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0018-4sum](https://github.com/toufiq-dev/leetcode-practices/tree/master/0018-4sum) |
 | [0414-third-maximum-number](https://github.com/toufiq-dev/leetcode-practices/tree/master/0414-third-maximum-number) |
 | [0645-set-mismatch](https://github.com/toufiq-dev/leetcode-practices/tree/master/0645-set-mismatch) |
+| [0948-sort-an-array](https://github.com/toufiq-dev/leetcode-practices/tree/master/0948-sort-an-array) |
 | [0978-valid-mountain-array](https://github.com/toufiq-dev/leetcode-practices/tree/master/0978-valid-mountain-array) |
 | [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/toufiq-dev/leetcode-practices/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
 | [2058-concatenation-of-array](https://github.com/toufiq-dev/leetcode-practices/tree/master/2058-concatenation-of-array) |
@@ -50,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/toufiq-dev/leetcode-practices/tree/master/0242-valid-anagram) |
 | [0414-third-maximum-number](https://github.com/toufiq-dev/leetcode-practices/tree/master/0414-third-maximum-number) |
 | [0645-set-mismatch](https://github.com/toufiq-dev/leetcode-practices/tree/master/0645-set-mismatch) |
+| [0948-sort-an-array](https://github.com/toufiq-dev/leetcode-practices/tree/master/0948-sort-an-array) |
 ## Simulation
 |  |
 | ------- |
@@ -62,4 +64,28 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/toufiq-dev/leetcode-practices/tree/master/0014-longest-common-prefix) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0948-sort-an-array](https://github.com/toufiq-dev/leetcode-practices/tree/master/0948-sort-an-array) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0948-sort-an-array](https://github.com/toufiq-dev/leetcode-practices/tree/master/0948-sort-an-array) |
+## Merge Sort
+|  |
+| ------- |
+| [0948-sort-an-array](https://github.com/toufiq-dev/leetcode-practices/tree/master/0948-sort-an-array) |
+## Bucket Sort
+|  |
+| ------- |
+| [0948-sort-an-array](https://github.com/toufiq-dev/leetcode-practices/tree/master/0948-sort-an-array) |
+## Radix Sort
+|  |
+| ------- |
+| [0948-sort-an-array](https://github.com/toufiq-dev/leetcode-practices/tree/master/0948-sort-an-array) |
+## Counting Sort
+|  |
+| ------- |
+| [0948-sort-an-array](https://github.com/toufiq-dev/leetcode-practices/tree/master/0948-sort-an-array) |
 <!---LeetCode Topics End-->
