@@ -1,34 +1,22 @@
 class Solution {
 public:
+    // Horizontal scanning
     string longestCommonPrefix(vector<string>& strs) {
         string prefix = strs[0];
-        int count = 0;
 
-        if (strs.size() == 1) {
-            return strs[0];
-        }
-
-        for (int i = 0; i < prefix.size(); i++) {
-            bool isPrefix = false;
-
-            for (int j = 1; j < strs.size(); j++) {
-                string str = strs[j];
-                
-                if (prefix[i] != str[i]) {
-                    isPrefix = false;
+        for (int i = 1; i < strs.size(); i++) {
+            int j = 0;
+            while (j < (min(prefix.size(), strs[i].size()))) {
+                if (prefix[j] != strs[i][j]) {
                     break;
-                } else {
-                    isPrefix = true;
                 }
+
+                j++;
             }
-            
-            if (isPrefix) {
-                count++;
-            } else {
-                break;
-            }
+
+            prefix = prefix.substr(0, j);
         }
 
-        return prefix.substr(0, count);
+        return prefix;
     }
 };
